@@ -1,0 +1,11 @@
+Biblioteca <|-- Mostrar:lista de libros
+Mostrar <|-- agrLibro:agregar libro a la lista
+Mostrar <|-- removerLibro:remover libro de la lista
+
+Usuario <|-- ListaDeLibros
+ListaDeLibros <|-- Librosp
+ListaDeLibros <|-- Devolverlibro
+Librosp *-- agrLibro:agregar a la lista de libros prestados
+Librosp *-- removerLibro:remover de la lista de libros en la Biblioteca
+Devolverlibro *-- agrLibro:agregar a la lista de libros en la Biblioteca
+Devolverlibro *-- removerLibro:remover de la lista de libros prestados
