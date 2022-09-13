@@ -1,0 +1,14 @@
+from examen import Biblioteca, usuario
+
+Libreria = Biblioteca(["El señor de los anillos", "El hobbit", "Los juegos del hambre", "Crepusculo", "El principito"])
+Felipe = usuario("Felipe")
+
+Libreria.MostrarLibros()
+
+
+Libreria.MostrarLibros()
+Felipe.Librosp("El señor de los anillos", Libreria.ListaDeLibros)
+
+
+Libreria.MostrarLibros()
+Felipe.DevolverLibro("El hobbit", Libreria.ListaDeLibros)
